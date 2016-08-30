@@ -16,7 +16,7 @@ if(len(sys.argv) < 2):
 ale = ALEInterface()
 
 max_frames_per_episode = ale.getInt("max_num_frames_per_episode");
-ale.set("random_seed",123)
+ale.setInt("random_seed",123)
 
 random_seed = ale.getInt("random_seed")
 print("random_seed: " + str(random_seed))
